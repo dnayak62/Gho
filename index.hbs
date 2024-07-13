@@ -6,23 +6,54 @@
     <title>Copernic Space - 2024 Moon Mission</title>
     <link rel="stylesheet" href="{{asset "css/screen.css"}}">
     <style>
-        /* Add your custom styles here */
+        /* Custom styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
         }
         .hero {
-            background: url('path-to-your-background-image.jpg') no-repeat center center/cover;
+            background: url('{{asset "images/hero-moon-mission.jpg"}}') no-repeat center center/cover;
             color: white;
             text-align: center;
             padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .hero h2 {
+            font-size: 1.5em;
+            font-weight: 300;
         }
         .content {
             padding: 20px;
             max-width: 800px;
             margin: 0 auto;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
         }
-        .content h1, .content h2, .content p {
-            margin: 10px 0;
+        .content h2, .content h3 {
+            color: #FFD700;
+        }
+        .content p, .content li {
+            color: #ddd;
+        }
+        .content ul {
+            list-style: none;
+            padding: 0;
+        }
+        .content ul li {
+            padding: 5px 0;
+        }
+        .content a {
+            color: #1E90FF;
+            text-decoration: none;
+        }
+        .content a:hover {
+            text-decoration: underline;
         }
         .footer {
             background: #333;
@@ -34,29 +65,7 @@
             color: white;
             margin: 0 10px;
         }
-        .hero h1 {
-            font-size: 2.5em;
-        }
-        .hero h2 {
-            font-size: 1.8em;
-            font-weight: 300;
-        }
-        .content h2 {
-            font-size: 1.5em;
-            margin-top: 20px;
-        }
-        .content ul {
-            list-style: none;
-            padding: 0;
-        }
-        .content ul li {
-            padding: 5px 0;
-        }
-        .content a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        .content a:hover {
+        .footer a:hover {
             text-decoration: underline;
         }
     </style>
@@ -92,7 +101,7 @@
             <p>Have questions or need assistance? <a href="mailto:contact@copernicspace.com">Contact us here</a> to learn more and stay updated on our exciting journey.</p>
         </div>
     </main>
-    <footer>
+    <footer class="footer">
         {{> "footer"}}
     </footer>
     <script src="{{asset "js/main.js"}}"></script>
