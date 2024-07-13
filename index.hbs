@@ -6,6 +6,10 @@
     <title>Copernic Space - 2024 Moon Mission</title>
     <link rel="stylesheet" href="{{asset "css/screen.css"}}">
     <style>
+        /* Add your custom styles here */
+        body {
+            font-family: Arial, sans-serif;
+        }
         .hero {
             background: url('path-to-your-background-image.jpg') no-repeat center center/cover;
             color: white;
@@ -14,6 +18,8 @@
         }
         .content {
             padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
         }
         .content h1, .content h2, .content p {
             margin: 10px 0;
@@ -28,11 +34,36 @@
             color: white;
             margin: 0 10px;
         }
+        .hero h1 {
+            font-size: 2.5em;
+        }
+        .hero h2 {
+            font-size: 1.8em;
+            font-weight: 300;
+        }
+        .content h2 {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+        .content ul {
+            list-style: none;
+            padding: 0;
+        }
+        .content ul li {
+            padding: 5px 0;
+        }
+        .content a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .content a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <header>
-        {{> header}}
+        {{> "header"}}
     </header>
     <main role="main">
         <div class="hero">
@@ -62,9 +93,8 @@
         </div>
     </main>
     <footer>
-        {{> footer}}
+        {{> "footer"}}
     </footer>
     <script src="{{asset "js/main.js"}}"></script>
 </body>
 </html>
-
